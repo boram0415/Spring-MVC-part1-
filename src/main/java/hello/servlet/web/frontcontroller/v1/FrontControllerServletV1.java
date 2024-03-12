@@ -13,8 +13,9 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+// 리팩토링 시 구조적인 개선 이후 테스트 하고 그 이후 세밀한 개선이 필요함
 
-    @WebServlet(name="frontControllerServletV1" , urlPatterns = "/front-controller/v1/*")
+@WebServlet(name="frontControllerServletV1" , urlPatterns = "/front-controller/v1/*")
 public class FrontControllerServletV1 extends HttpServlet {
 
     private Map<String, ControllerV1> controllerMap = new HashMap<>();
