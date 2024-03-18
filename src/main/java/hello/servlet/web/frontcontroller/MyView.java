@@ -25,7 +25,6 @@ public class MyView {
         modelToRequestAttribute(model, req);
         RequestDispatcher dispatcher = req.getRequestDispatcher(viewPath);
         dispatcher.forward(req,resp);
-
     }
 
     private static void modelToRequestAttribute(Map<String, Object> model, HttpServletRequest req) {
